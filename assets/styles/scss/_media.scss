@@ -1,0 +1,368 @@
+@media (max-width: 1024px) {  
+    .container {
+        padding: 0 20px;
+    } 
+    .promo {
+        height: auto;
+        &__title {
+            font-size: 45px;
+        }
+        &-item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+
+        &-card {
+            width: 48.5%;
+            height: auto;
+
+            &-info {
+                flex-direction: column;
+                .info-list {
+                    margin-left: 0px;
+                    margin-top: 25px;
+                }
+            }
+            &__img {
+                width: 45%;
+            }
+
+            &-btn {
+                margin-top: 25px;
+            }
+        }
+    }
+    // End promo
+    
+    .advertising {
+        &__img {
+            width: 50%;
+        }
+        &-info {
+            width: 45%;
+            color: $white;
+
+            &__title {
+                font-size: 35px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            &__text {
+                font-size: 18px;
+            }
+        }
+
+    }
+    // advertising
+}
+
+@media (max-width: 768px) {  
+    .btn-toOrder {
+        width: 100%;
+    }
+    .title__text {
+        font-size: 45px;
+    }
+    .product {
+    &-middle {
+        text-align: center;
+        &__img {
+            width: 70%;
+        }
+    }
+        &-info {
+            &-list {
+                margin-bottom: 15px;
+                text-align: center;
+                .product-circle {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+    // End product
+    .reviews {
+        padding: 50px 0;
+        &-item {
+            height: 400px;
+        }
+        .review {
+            width: 90%;
+            &-photo {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    // End reviews
+    
+    .advertising {
+        &__img {
+            width: 50%;
+        }
+        &-info {
+            width: 45%;
+            color: $white;
+
+            &__title {
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+            &__text {
+                font-size: 16px;
+            }
+        }
+
+        &-list {
+            margin-top: 25px;
+            padding: 0;
+
+            &__text {
+                font-size: 16px;
+                margin-bottom: 15px;
+                .fa-shield-check {
+                    font-size: 22px;
+                }
+            }
+        }
+
+    }
+    // advertising
+        
+    .order-form {
+        padding: 50px 0;
+
+        .time {
+            &-dash {
+                width: 60px;
+
+                &__text {
+                    font-size: 30px;
+                }
+                &__sub-text {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &-item {
+            @include flex-center();
+            margin-top: 100px;
+
+            .card {
+                width: 50%;
+
+                .discount {
+                    font-size: 16px;
+                }
+
+                .price-discount {
+
+                    .price {
+                        font-size: 30px;
+                    }
+                    .discount__text {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .form {
+                width: 50% !important;
+                margin-left: 25px;
+                &__label {
+                    padding-left: 10px;
+                    font-size: 14px;
+                }
+                    &__btn {
+                        margin-top: 50px;
+                    }
+            }
+        }
+    }
+    // End order-form
+}
+
+@media (max-width: 576px) {  
+    .container {
+        padding: 0 10px;
+    }  
+    .title__text {
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+    .promo {
+        &__title {
+            font-size: 45px;
+        }
+        &-item {
+            flex-direction: column;
+        }
+
+        &-card {
+            width: 100%;
+            padding: 25px 10px;
+            margin-bottom: 50px;
+
+            &-info {
+                flex-direction: row;
+                .info-list {
+                    margin-left: 15px;
+                    margin-top: 25px;
+                    &__text {
+                        font-size: 16px;
+                        margin-bottom: 10px;
+    
+                        .fa-shield-check {
+                            color: #2ecc71;
+                            font-size: 24px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            &__img {
+                width: 30%;
+            }
+
+            &-btn {
+                margin-top: 20px;
+            }
+        }
+    }
+    // End promo
+    
+    .product {
+        padding: 50px 0;
+        &-item {
+            flex-direction: column;
+        }
+        &-middle {
+            margin: 25px 0;
+            &__img {
+                width: 70%;
+            }
+        }
+            &-info {
+                display: flex;
+                justify-content: space-between;
+                &-list {
+                    width: 30%;
+                    text-align: center;
+                    margin-bottom: 0;
+                    :last-child {
+                        margin: 0;
+                    }
+                    .product-circle {
+                        width: 65px;
+                        height: 65px;
+                    }
+                }
+            }
+        }
+        // End product
+    .reviews {
+        padding: 50px 0;
+        padding-bottom: 100px;
+        &-item {
+            height: auto;
+
+            .next,
+            .prev {
+                bottom: -75px;
+            }
+        }
+        .review {
+            width: 100%;
+            &-photo {
+                width: 150px;
+                height: 150px;
+            }
+            .user-name {
+                font-size: 20px;
+            }
+        }
+    }
+    // End reviews
+    
+    .advertising {
+        padding: 50px 0;
+        &-item {
+            flex-direction: column-reverse;
+        }
+        &__img {
+            width: 75%;
+            margin-top: 25px;
+        }
+        &-info {
+            width: 100%;
+            color: $white;
+
+            &__title {
+                text-align: center;
+            }
+            &__text {
+                font-size: 16px;
+            }
+        }
+        .mobile_btn-hide {
+            display: none;
+        }
+        .mobile_btn-show {
+            margin-top: 0;
+            display: block;
+            .toOrder__btn {
+                width: 75%;
+            }
+        }
+
+        &-list {
+            margin-top: 25px;
+            padding: 0;
+
+            &__text {
+                font-size: 16px;
+                margin-bottom: 15px;
+                .fa-shield-check {
+                    font-size: 22px;
+                }
+            }
+        }
+
+    }
+    // advertising        
+    .order-form {
+        padding: 50px 0;
+
+        .time {
+            &-dash {
+                width: 60px;
+
+                &__text {
+                    font-size: 30px;
+                }
+                &__sub-text {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &-item {
+            flex-direction: column;
+
+            .card {
+                width: 100%;
+            }
+
+            .form {
+                width: 100% !important;
+                margin-left: 0;
+                margin-top: 50px;
+            }
+        }
+    }
+    // End order-form
+}
