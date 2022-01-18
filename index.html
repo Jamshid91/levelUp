@@ -242,7 +242,7 @@
                     
                     <div class="">
                         <label for="userPhone" class="form__label">Ваше номер телефона </label>
-                        <input type="text" class="form__inp" id="userPhone" placeholder="+7(495)775-31-18" maxlength="16">
+                        <input type="text" class="form__inp" id="userPhone" placeholder="+7(495)775-31-18" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="16">
                         <small class="error"></small>
                     </div>
                    
